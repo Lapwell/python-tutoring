@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
     },
 }))
 
-export function AboutMe() {
+export default function AboutMe() {
     const {classes} = useStyles()
     return (
         <div className={classes.wrapper}>
