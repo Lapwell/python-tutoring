@@ -24,8 +24,6 @@ export default function Schedule() {
             <InlineWidget url="https://calendly.com/byronrwc/code-tutoring"
                 styles={{
                     height: '92%',
-                    backgroundColor: 'red',
-                    color: 'blue'
                 }}
                 pageSettings={{
                     hideEventTypeDetails: true,
