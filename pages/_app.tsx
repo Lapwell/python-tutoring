@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
               margin: 'auto',
             },
             '.calendly-inline-widget': {
-              width: '400px',
+              width: '500px',
             }
           }),
           colorScheme:'light',
