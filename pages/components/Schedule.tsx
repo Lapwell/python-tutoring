@@ -13,7 +13,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
     },
     inner__stack: {
-        paddingLeft: '16px',
+        paddingLeft: '20px',
     }
 }))
 
@@ -23,7 +23,7 @@ export default function Schedule() {
         <div className={classes.wrapper}>
             <InlineWidget url="https://calendly.com/byronrwc/code-tutoring"
                 styles={{
-                    height: '92%',
+                    height: '100%',
                 }}
                 pageSettings={{
                     hideEventTypeDetails: true,
