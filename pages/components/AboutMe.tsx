@@ -19,7 +19,9 @@ const useStyles = createStyles((theme) => ({
         alignItems: 'center',
     },
     title: {
-        fontSize: 64
+        fontSize: 64,
+        marginTop: '0rem',
+        marginBottom: '0rem',
     },
 }))
 
@@ -31,7 +33,7 @@ export default function AboutMe() {
                 <Image src='photo.png' alt='A snazzy photo' width='40vw' height='80vh' style={{alignSelf: 'end', flexShrink: 0}}/>
                 <Stack>
                     <Title order={1} className={classes.title}>Hello, </Title>
-                    <Title order ={1} className={classes.title}>I'm Byron</Title>
+                    <Title order={1} className={classes.title}>I'm Byron</Title>
                     <Text maw={500} size='xl' mb='xs'>My service is about helping you learn the basics and fundamentals of coding in a chill, relaxed environment.</Text>
                     <Text maw={500} size='md' mb='xs'>I'm a local, born in the Westshore area. I work at an awesome local tech company that teaches kids programming and STEM while pursuing education and personal goals in life. My passions and interests revolve around computers, science, video games, and technology in general.</Text>
                 <CopyButton value={'ac.gnirotutnohtyp@cnoryb'.split('').reverse().join('')}>
