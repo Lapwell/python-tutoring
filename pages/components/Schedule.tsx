@@ -18,7 +18,7 @@ const useStyles = createStyles((theme) => ({
 }))
 
 export default function Schedule() {
-    const {classes} = useStyles()
+    const { classes } = useStyles()
     return (
         <div className={classes.wrapper}>
             <InlineWidget url="https://calendly.com/byronrwc/code-tutoring"
