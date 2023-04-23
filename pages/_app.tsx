@@ -1,11 +1,25 @@
 import { MantineProvider } from '@mantine/core'
 import type { AppProps } from 'next/app'
+import Script from 'next/script';
 import Head from 'next/head'
 import { Analytics } from '@vercel/analytics/react';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxxx"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-11114224184');
+        `}
+      </Script>
       <Head>
         <title>Python Tutoring Website</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
